@@ -10,14 +10,13 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen grid grid-cols-2 items-center pt-6 sm:pt-0 bg-black-100">
+        <div class="min-h-screen grid grid-cols-2 items-center sm:pt-0 bg-black-100">
             <div class="flex items-center justify-center">
-                <a href="/">
+                <a href="{{route('landing')}}">
                     <x-application-logo class="w-40 h-40" />
                 </a>
             </div>

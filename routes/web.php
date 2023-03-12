@@ -58,5 +58,9 @@ Route::middleware('auth')->group(function () {
     Route::post('/comments/update', [CommentController::class, 'update'])->name('comment.update');
     Route::delete('/commentsdelete/{id}', [CommentController::class, 'destroy'])->name('comment.destroy');
 });
+
+Route::fallback(function () {
+    return view('landing');
+});
  
 require __DIR__.'/auth.php';
