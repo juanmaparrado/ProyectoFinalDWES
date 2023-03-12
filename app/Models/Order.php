@@ -19,8 +19,8 @@ class Order extends Model
         '_token',
     ]; 
 
-    public function user()
+    public function users()
     {
-        return $this->belongsTo('App\Models\User::class','user_id','id');
+        return $this->belongsTo(User::class);
     }
 }

@@ -43,8 +43,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function order()
+    public function orders()
     {
-        return $this->hasMany('App\Models\Order::class','user_id','id');
+        return $this->hasMany(Order::class,'user_id');
     }
 }
