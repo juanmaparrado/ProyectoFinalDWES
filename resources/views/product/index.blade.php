@@ -4,11 +4,9 @@
             {{ __('Products') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class = "py-4 px-4 bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <a href="{{route('product.create')}}" type="button" style="background-color:blue;height:50px;font-size:20px;color:white;padding:0.5em" class="btn btn-primary">
+                <a href="{{route('product.create')}}" type="button" style="background-color:#988270;height:50px;border-radius:2%;color:white;" class="grid items-center">
                     Add Producto
                 </a>
                 <table class="table table-bordered">
@@ -43,5 +41,4 @@
                     </table>
             </div>
         </div>
-    </div>
 </x-app-layout>

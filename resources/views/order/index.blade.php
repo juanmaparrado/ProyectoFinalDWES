@@ -4,11 +4,9 @@
             {{ __('Orders') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class=" mt-6 max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class = "py-4 px-4 bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    <a href="{{route('order.create')}}" type="button" style="background-color:yellow;font-size:20px;" class="btn btn-primary">
+                    <a href="{{route('order.create')}}" type="button" style="background-color:#988270;height:50px;border-radius:2%;color:white;" class="grid items-center">
                         Add Order
                     </a>
                 <table class="table table-dark">

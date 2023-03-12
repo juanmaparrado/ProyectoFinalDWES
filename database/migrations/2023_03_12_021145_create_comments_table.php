@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id()->autoIncrement();
             $table->string('title');
             $table->string('description');
-            $table->unsignedBigInteger('product_id');
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
             $table->timestamps();
         });
     }

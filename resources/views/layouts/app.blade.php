@@ -17,6 +17,12 @@
             border-collapse: collapse;
             width: 100%;
         }
+
+        main{
+            display:grid;
+            grid-template-columns: repeat(2fr, 1fr);
+            place-items: center;
+            }
         main a{
             text-align: center;
             object-fit: cover;
@@ -36,7 +42,7 @@
             <!-- Page Heading -->
             @if (isset($header))
                 <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <div class="w-full mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
                 </header>

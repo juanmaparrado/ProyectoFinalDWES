@@ -17,9 +17,4 @@ class UserController extends Controller
         $users = User::all();
         return view('user.index', compact('users'));
     }
-
-    public function misPedidos(){
-        $orders = Order::where('user_id', auth()->user()->id)->get();
-        return view('user.misPedidos', compact('orders'));
-    }
 }

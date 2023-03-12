@@ -10,7 +10,7 @@
             <div class = "py-4 px-4 bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <table class="table table-bordered">
                     <thead>
-                        <tr>
+                        <tr style="background-color:#988270;height:50px;border-radius:2%;color:white;">
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Create at</th>
