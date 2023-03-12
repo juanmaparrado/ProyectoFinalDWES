@@ -19,7 +19,7 @@ class ProductFactory extends Factory
         return [
             'name' => $this->faker->randomElement(["Elements T-shirt"," Anniversary hoodie", "TruckCup cap", " Fout shorts", "Blind Shit pants","Puffy LOve jacket" ]),
             'description' => $this->faker->sentence(),
-            'price' => $this->faker->randomFloat(2, 0, 100),
+            'price' => $this->faker->randomNumber(2, 200),
             'stock' => $this->faker->randomNumber(2)
         ];
     }

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id()->autoIncrement();
             $table->string('name');
             $table->string('description');
-            $table->float('price');
+            $table->integer('price');
             $table->integer('stock');
             $table->timestamps();
         });
