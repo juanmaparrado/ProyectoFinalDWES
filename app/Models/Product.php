@@ -19,4 +19,9 @@ class Product extends Model
     protected $guarded = [
         '_token',
     ]; 
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class, 'product_id');
+    }
 }

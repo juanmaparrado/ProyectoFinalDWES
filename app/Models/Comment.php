@@ -21,4 +21,9 @@ class Comment extends Model
         'created_at',
         'Updated_at',
     ]; 
+
+    public function products()
+    {
+        return $this->belongsTo(Product::class, 'id');
+    }
 }
